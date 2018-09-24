@@ -15,7 +15,7 @@ export const binDirectory = join('node_modules', '.bin');
 
 export const distDirectory = '_dist';
 
-export const siteDirectory = 'site';
+export const siteDirectory = 'hexo';
 
 export const syncDirectory = '.sync';
 
@@ -128,6 +128,6 @@ export const tslint = {
 		configuration: 'tslint.json'
 	},
 	support: 'support/**/*.ts',
-	site: [ 'site/**/*.ts', '!site/node_modules/**' ]
+	site: ['hexo/**/*.ts', '!hexo/node_modules/**' ]
 };
 

@@ -43,6 +43,6 @@ export = function (grunt: IGrunt) {
 	grunt.registerMultiTask('hexo', wrapAsyncTask(buildTask));
 	grunt.registerTask('hexoClean', function () {
 		const done = this.async();
-		hexoClean(this.options<any>({ target: 'site' }).target).then(done);
+		hexoClean(this.options<any>({ target: 'hexo' }).target).then(done);
 	});
 };

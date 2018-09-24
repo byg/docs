@@ -24,11 +24,11 @@ coverage
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+/site/build/Release
 
 # Dependency directories
-node_modules
-jspm_packages
+/site/node_modules
+/site/jspm_packages
 
 # Optional npm cache directory
 .npm
@@ -39,16 +39,16 @@ jspm_packages
 #JetBrains
 .idea
 
-_dist
-_build
+/site/_dist
+/site/_build
 html-report
 .ghpublish
 .apitemp
-/site/bower_components
+/site/hexo/bower_components
 #/deploy_key
-/deploy_key.pub
-/deploy_key.enc
-/support/**/*.js
+/site/deploy_key.pub
+/site/deploy_key.enc
+/site/support/**/*.js
 /.test
 /site/_overrides.json
 /site/_multiconfig.yml
