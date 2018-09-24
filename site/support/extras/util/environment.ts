@@ -1,6 +1,7 @@
 import { existsSync } from 'fs';
 import { PublishMode } from '../commands/publish';
 import { Auth } from 'github';
+import { logger } from '../log';
 
 /**
  * the name of the environment variable holding the github authentication for API calls
@@ -95,6 +96,7 @@ export function isCronJob(): boolean {
  * @return {boolean} if we are currently running on Travis
  */
 export function isRunningOnTravis(): boolean {
+	logger.info('isRunningOnTravis: ', process.env.TRAVIS_BRANCH);
 	return !!process.env.TRAVIS_BRANCH;
 }
 

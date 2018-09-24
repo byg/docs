@@ -28,6 +28,7 @@ export default async function publish(options: Options) {
 	let publishMode = typeof options.publishMode === 'function' ? options.publishMode() : options.publishMode;
 	// 修改为如果不是 travis 环境，也可以推送代码
 	!isRunningOnTravis() ? publishMode = 'publish': '';
+	logger.info('publishMode:', publishMode);
 	const { branch, repo } = options;
 	
 	if (publishMode !== 'commit' && publishMode !== 'publish') {
