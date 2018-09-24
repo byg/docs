@@ -4,7 +4,8 @@
   "description": "",
   "main": "Gruntfile.js",
   "scripts": {
-    "install": "npm i && cd hexo && npm i && cd .."
+    "install-site": "cd hexo && npm i",
+    "install": "npm run install-site"
   },
   "repository": {
     "type": "git",
